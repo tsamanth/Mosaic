@@ -1,0 +1,137 @@
+#container{
+    margin: 0px auto;
+    color: #333;
+    line-height: 130%;
+    width: 1200px;
+}
+
+#logo{
+    float: left;
+    width: 10%;
+}
+
+#logo img{
+    width: 80%;
+
+}
+
+#header{
+    width: 90%
+}
+
+#header h1{
+    margin: 1px;
+    padding: 1px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  
+  li:last-child {
+    border-right: none;
+  }
+
+  li {
+    float: left;
+    border-right:1px solid #bbb;
+    width: 16.5%;
+    border-radius: 10px;
+    background-color: #333;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #333;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+
+
+#contact-buttons{
+    float: right;
+    width: 10%;
+}
+
+  .btn-group .button {
+    border-radius: 5px;
+    background-color: #333; 
+    border: 1px solid black;
+    color: white;
+    padding: auto 32px;
+    margin: 1px;
+    text-align: center;
+    font-size: 12px;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .btn-group .button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+  }
+  
+  .btn-group .button:hover {
+    background-color: brown;
+  }
+
+.story{
+	float:left;
+	width:700px;
+	margin:0;
+	padding:1em;
+}
+
+.opinion{
+  float: right;
+  width: 300px;
+  margin: 0;
+  padding: 1em;
+
+}
+
+.headline{
+	margin-left: 200px;
+        margin-right: 200px;
+        padding: 1em;
+        max-width: 800px;
+}
+.floatleft{
+	float:left;
+	margin-right:10px;
+}
+
+.floatright {
+	float:right;
+	margin-left:10px;
+}
+
+a {
+        color:black;
+        text-decoration:none;
+}
+
+h2{
+    color: rgb(10, 114, 70);
+}
+
+#description {
+    background-color: rgb(247, 247, 247);
+    text-align: center;
+}
+
+.opinion h2{
+    text-align: center;
+}

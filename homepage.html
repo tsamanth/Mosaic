@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>Mosaic</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Newspaper article">
+	<meta name="author" content="Tanvi Shah">
+    <link href="homepage.css" rel = "stylesheet">
+    
+</head> 
+
+<body onload = "loadTitles(); change()">
+    <div id = "container">
+        <div id = "logo">
+	    <a href = "homepage.html"><img src="logo.jpg"></a>
+	    <?php
+
+    		if (!isset($_COOKIE[$username])) {
+        		echo "<p>This is a news compiler! The best in the business.</p>";
+    		}
+    		else {
+       			echo  "<p>Welcome " . $username . "</p>";
+    		}
+		?>
+        </div>
+
+        <div id = "contact-buttons">
+            <div class="btn-group">
+		<a href = "contactus.html"><button class="button">Contact Us</button></a>
+		<a href = "signin.html"><button class="button">Sign In</button></a>
+		<a href = "subscribe.html"><button class="button">Subscribe</button></a>
+            </div>
+        </div>
+
+        <div id = "header">
+	    <a class = "active" href = "homepage.html"><h1>Mosaic</h1></a>
+    
+            <br/>
+        
+	    <ul>
+                <li><a href="world.html">World</a></li>
+                <li><a href="US.html">U.S.</a></li>
+                <li><a href="business.html">Business</a></li>
+		<li><a href="opinion.html">Opinion</a></li>
+                <li><a href="arts.html">Arts</a></li>
+                <li><a href="sports.html">Sports</a></li>
+            </ul>
+        </div>
+	<div class = "bcontainer">
+		<div class = "banner-wrap">
+			<div class = "banner-move" id = "banner">
+			</div>
+		</div>
+	</div>
+	
+	<div class = "story">
+		<h3><a href = "hpArticle1.html">Veteran Police Officer Rebukes Chauvin's 'Totally Unnecessary' Conduct</a></h3>
+		<p>Lt. Richard Zimmerman testified that Derek Chauvin violated department policy when he knelt on George Floyd’s neck for more than nine minutes.</p>
+		<h3><a href = "hpArticle2.html">Apprehensions at Border Reach Highest Level in at Least 15 Years</a></h3>
+		<p>More migrant families are entering the U.S. and being released, new figures for March show, as thousands of children remain in detention facilities.</p>
+		<h3><a href = "hpArticle3.html">As Pandemic Upends Teaching, Fewer Students Want to Pursue It</a></h3>
+		<p>Disruptions to education during the pandemic are turning people away from a profession that was already struggling to attract new recruits.</p>
+		<p>Many program leaders believe enrollment fell because of the perceived hazards posed by in-person teaching and the difficulties of remote learning, combined with longstanding frustrations over low pay compared with professions that require similar levels of education.</p>
+		<h3><a href = "hpArticle4.html">They Survived Taiwan's Train Crash. Their Loved Ones Did Not.</a></h3>
+		<p>A woman lost her husband and their two children. A man held his 5-year-old daughter in his arms in the minutes before she died.</p>
+	
+	</div>
+	
+	<div class = "opinion">
+		<h3><a href = "hpOped1.html">Opinion/Op-ed: Jeff Bezos Is Taunting Politicians. Will They Take the Bait?</a></h3>
+		<p id = "uppercase">Kara Swisher</p>
+		<p>A labor battle in Alabama is a referendum on Amazon’s strategy.</p>
+		<h3><a href = "hpOped2.html">Opinion/Op-ed: The Unsettling Power of Easter</a></h3>
+		<p id = "uppercase">Esau McCaulley</p>
+		<p>The holiday is much more than a celebration of spring.</p>
+		<h3><a href = "hpOped3.html">Opinion/Op-ed: Biden Wants to Spend Billions to Fight Climate Change. It's Not Enough</a></h3>
+		<p id = "uppercase">Farhad Manjoo</p>
+		<p>His plan is too big to pass, and too small to work.</p>
+	</div>
+	<div class = "headline">	
+		<h3><a href = "hpHeadline1.html">Driver Rams Into Officers at Capitol, Killing One and Injuring Another</a></h3>
+		<div class = "floatleft">
+		<img src = "crash.jpg" alt = "Car crashed into barrier at Capitol" width = "250" height = "150"></br >
+		</div>
+		<p>Less than three months after the Jan. 6 riot, a Capitol Police officer was killed when a man slammed his car into him and another officer.The suspect, a 25-year-old man who was alone and armed with a knife, was shot and killed.</p>
+		<p>The attack shocked a Capitol slowly returning to normalcy, raising new questions about securing the complex.</p>
+		<h3><a href = "hpHeadline2.html">M.L.B. Pulls All-Star Game From Georgia in Response to Voting Law</a></h3>
+                <div class = "floatright">
+                <img src = "baseball.jpg" alt = "Empty baseball staduum" width = "250" height = "150">
+                </div>
+		<p>The move served as a warning to Republicans in other states who are trying to restrict voting, a move that both Republicans and Democrats in the state oppose despite fiercely disagreeing about the new voting law. The action is likely to put additional pressure on other organizations and corporations to consider pulling business out of Georgia.</p>
+		<p>The announcement by the baseball commissioner, Rob Manfred, came after days of lobbying from civil rights groups and discussions with stakeholders like the Major League Baseball Players Association.</p>
+		<h3><a href = "hpHeadline3.html">More U.S. States Expand Vaccine Eligibility as Pace Accelerates</a></h3>
+		<div class = "floatleft">
+                <img src = "vaccine.jpg" alt = "Patient receiving his second Covid-19 vaccine shot" width = "250" height = "150"></br >
+                </div>
+		<p>Alabama is the latest to broaden access in an effort to make all adults eligible by the end of the month. Meanwhile, France enters its third lockdown.</p>
+		<p>Fully vaccinated americans can travel with low risk, C.D.C. says. They should still wear masks but no quarantines are necessary, the agency said in new guidance citing growing data about the effectiveness of the shots.</p>
+		<h3><a href = "hpHeadline4.html">Matt Gaetz Says He Won't Resign as Pressure Mounts</a></h3>
+                <div class = "floatright">
+                <img src = "gaetz.jpg" alt = "Matt Gaetz" width = "250" height = "150"></br >
+                </div>
+		<p>Rep. Matt Gaetz (R., Fla.) on Friday said he wouldn’t resign in the face of rising pressure over reports that the FBI has been investigating him since last summer, in part over whether he broke federal sex-trafficking laws.</p>
+		<p>With the House in recess, members have been largely silent about Mr. Gaetz since Minority Leader Kevin McCarthy (R., Calif.) earlier in the week referred to “serious implications” in connection with the Federal Bureau of Investigation inquiry. But in the state capital of Tallahassee, Republicans were already discussing who would replace Mr. Gaetz, people familiar with the conversations said.</p>
+	</div>
+
+    </div>
+	<script>
+		var title;
+		const banner = document.getElementById("banner");
+		var links = new Array("hpHeadline1.html", "hpHeadline2.html", "hpHeadline3.html", "hpHeadline4.html");
+		var titles = new Array("Driver Rams Into Officers at Capitol, Killing One and Injuring Another", "M.L.B. Pulls All-Star Game From Georgia in Response to Voting Law","More U.S. States Expand Vaccine Eligibility as Pace Accelerates","Matt Gaetz Says He Won't Resign as Pressure Mounts");
+		function loadTitles() {
+			for (i = 0; i < titles.length; i++){
+				title = document.createElement("div");
+				title.setAttribute("class", "banner-item");
+				title.setAttribute("onclick", "location.href = '" + links[i] + "'");
+				title.innerHTML = titles[i];
+				banner.appendChild(title);
+			}
+		}
+
+		function change() {
+			window.location.href = "homepage.php"
+		}
+
+	</script>
+
+</body>
+
+
+</html>

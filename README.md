@@ -1,2 +1,1 @@
-# Mosaic
-News Compiler
+# CS329E

@@ -1,0 +1,229 @@
+
+/* 'widths' sub menu */
+#layoutdims {
+	clear:both;
+	background:#eee;
+	border-top:4px solid #000;
+	margin:0;
+	padding:6px 15px !important;
+	text-align:right;
+}
+/* column container */
+.colmask {
+	position:relative;	/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */
+	border-top: solid black 2px;
+}
+/* common column settings */
+.colright,
+.colmid,
+.colleft {
+	float:left;
+	width:100%;			/* width of page */
+	position:relative;
+}
+.col1,
+.col2,
+.col3 {
+	float:left;
+	position:relative;
+	padding:0 0 1em 0;	/* no left and right padding on columns, we just make them narrower instead 
+					only padding top and bottom is included here, make it whatever value you need */
+	overflow:hidden;
+}
+/* 3 Column settings */
+.threecol {
+	background:#eee;		/* right column background colour */
+}
+.threecol .colmid {
+	right:25%;			/* width of the right column */
+	background:#fff;		/* center column background colour */
+	border-right: solid black 1px;
+}
+.threecol .colleft {
+	right:50%;			/* width of the middle column */
+	background:#f4f4f4;
+	border-right: solid black 1px;	/* left column background colour */
+}
+.threecol .col1 {
+	width:46%;			/* width of center column content (column width minus padding on either side) */
+	left:102%;			/* 100% plus left padding of center column */
+}
+.threecol .col2 {
+	width:21%;			/* Width of left column content (column width minus padding on either side) */
+	left:31%;
+	text-align: center;			
+}
+.threecol .col3 {
+	width:21%;			/* Width of right column content (column width minus padding on either side) */
+	left:85%;			/* Please make note of the brackets here:
+					(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+}
+/* Footer styles */
+#footer {
+	clear:both;
+	float:left;
+	width:100%;
+	border-top:1px solid #000;
+	text-align: center;
+}
+#footer p {
+	padding:10px;
+	margin:0;
+}
+
+#logo{
+    float: left;
+    width: 10%;
+}
+
+#logo img{
+    width: 80%;
+
+}
+
+#header{
+    width: 90%
+}
+
+#header h1{
+    margin: 1px;
+    padding: 1px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  
+  li:last-child {
+    border-right: none;
+  }
+
+  li {
+    float: left;
+    border-right:1px solid #bbb;
+    width: 16.5%;
+    border-radius: 10px;
+    background-color: #333;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #333;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+
+
+#contact-buttons{
+    float: right;
+    width: 10%;
+}
+
+  .btn-group .button {
+    border-radius: 5px;
+    background-color: #333; 
+    border: 1px solid black;
+    color: white;
+    padding: auto 32px;
+    margin: 1px;
+    text-align: center;
+    font-size: 12px;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .btn-group .button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+  }
+  
+  .btn-group .button:hover {
+    background-color: brown;
+  }
+
+.story{
+	float:left;
+	width:200px;
+	margin:0;
+	padding:1em;
+}
+
+.opinion{
+	float: right;
+        width: 200px;
+        margin: 0;
+        padding: 1em;
+
+}
+
+.headline{
+	margin-left: 200px;
+        margin-right: 200px;
+        padding: 1em;
+        max-width: 800px;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
+
+#container{
+    margin: 0px auto;
+    color: #333;
+    line-height: 130%;
+    width: 1200px;
+}
+
+.buttons {
+    padding: 14px 20px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+}
+  
+.endbtn, .startbtn {
+    color: white;
+    float: left;
+    width: 10%;
+    border: 1px solid black;
+
+}
+
+.resetbtn {
+    padding: 12px;
+    margin-left: 12px;
+}
+
+.submitbtn{
+    padding: 12px;
+    margin-right: 12px;
+}
+
+a {
+	color:black;
+	text-decoration:none;
+}
